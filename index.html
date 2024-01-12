@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise Template</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    
-    
+    <body>
     <div id="content">
         <h1>Welcome to the Exercise!</h1>
         <p id="description">This is a simple exercise to practice HTML, CSS, and JavaScript.</p>
-        <button id="actionButton" onclick="toggleParagraph()">Click Me! </button>
+        <button id="actionButton" onclick="toggleParagraph()"  >Click Here! </button>
     </div>
      <nav>
         <a href="#Home">Home</a>
@@ -18,14 +19,11 @@
         <a href="#Contact">Contact</a>
     </nav>
 
-    <div id= footer>
-        &copy; Nethmi Gamage | <span id="currentYear"></span>
-        <script>
-            document.getElementById("currentYear").innerHTML = new Date().getFullYear();
-        </script>
-        
-    </footer>
+    <div id="footer">
+        <footer> &copy; Nethmi Gamage | <span id="currentYear"></span></footer>
+    </div>
     
     <script src="script.js"></script>
+   
 </body>
 </html>

@@ -1,11 +1,10 @@
-document.getElementById("actionButton").addEventListener("click", function() {
-    alert("Button clicked!");
-});
 
-// JavaScript to dynamically set the current year
+
 document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+// JavaScript to dynamically set the current year
 
 function toggleParagraph() {
+    
     var paragraph = document.getElementById("description");
 
     // Get the computed style
@@ -15,8 +14,18 @@ function toggleParagraph() {
     if (style.display === 'none' || style.display === '') {
         // If hidden, make it visible
         paragraph.style.display = 'block';
+        actionButton.innerHTML = 'Click Here!';
+        
+        
     } else {
         // If visible, make it hidden
         paragraph.style.display = 'none';
+        actionButton.innerHTML = 'You Clicked!';
+
     }
+   
 }
+
+
+
+
