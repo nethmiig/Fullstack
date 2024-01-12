@@ -5,6 +5,7 @@ document.getElementById("currentYear").innerHTML = new Date().getFullYear();
 btn.addEventListener("click", function(){
     paragraph.style.height = getComputedStyle(paragraph).height;
     paragraph.innerHTML = '';
+    btn.innerHTML = "You Clicked!";
 });
 
 
