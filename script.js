@@ -1,13 +1,39 @@
-let paragraph = document.querySelector("#description");
+/* let paragraph = document.querySelector("#description");
 let btn = document.querySelector("#actionButton");
 document.getElementById("currentYear").innerHTML = new Date().getFullYear();
 
 btn.addEventListener("click", function(){
+
     paragraph.style.height = getComputedStyle(paragraph).height;
     paragraph.innerHTML = '';
     btn.innerHTML = "You Clicked!";
-});
+}); */
 
+
+let paragraph = document.querySelector("#description");
+let btn = document.querySelector("#actionButton");
+let originalText = paragraph.innerHTML;
+let isTextHidden = false;
+
+document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+
+btn.addEventListener("click", function(){
+    if (!isTextHidden) {
+        // Hide the text
+        let originalHeight = getComputedStyle(paragraph).height;
+        paragraph.style.height = originalHeight;
+        paragraph.innerHTML = '';
+        btn.innerHTML = "Clicked!";
+    } else {
+        // Restore the text
+        paragraph.style.height = ''; // Reset the height
+        paragraph.innerHTML = originalText; // Restore the original text
+        btn.innerHTML = "Click Here"; // Reset button text
+    }
+
+    // Toggle the flag
+    isTextHidden = !isTextHidden;
+});
 
 
 
