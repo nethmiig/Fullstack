@@ -20,7 +20,7 @@ nav a {
     margin: 0 10px;
 }
 nav a:hover {
-    background-color: rgb(164, 151, 151); /* Darker green on hover */
+    background-color: rgb(95, 85, 85); /* Darker green on hover */
 }
 
 #content {
@@ -37,7 +37,7 @@ nav a:hover {
     
 }
 #actionButton:hover {
-    background-color:azure; /* Darker green on hover */
+    background-color:rgb(164, 151, 151); /* Darker green on hover */
     
     transform: scale(1.1);}
 
